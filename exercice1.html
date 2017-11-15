@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>exercice 1 partie 2 canvas</title>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <script>
+  var c = document.getElementById( "canvas" );
+  var ctx = c.getContext("2d");
+  ctx.lineWidth = 3;
+  //haut de la glace arc de cercle inversé par math.pi true
+  ctx.beginPath();
+  ctx.arc(100,100,50,0,Math.PI,true);
+  ctx.fillStyle = "#8A0908";// couleur de la glace
+  ctx.fill();
+  //début du cône cornetto
+  ctx.beginPath();
+  ctx.moveTo(50,100);
+  ctx.lineTo(150,100);
+  ctx.lineTo(100,250)
+  ctx.fillStyle = "#AA6522";// couleur de la glace
+  ctx.fill();
+  </script>
+</body>
+</html>
